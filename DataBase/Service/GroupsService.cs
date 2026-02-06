@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace pract12_trpo.DataBase.Service
 {
@@ -42,6 +43,20 @@ namespace pract12_trpo.DataBase.Service
             if (Commit() > 0)
                 if (Groups.Contains(group))
                     Groups.Remove(group);
+        }
+        public void LoadRelation(Group group, string relation)
+        {
+            var entry = _db.Entry(group);
+            var navigation = entry.Metadata.FindNavigation(relation)
+            ?? throw new InvalidOperationException($"Navigation '{relation}' not found");
+            if (navigation.IsCollection)
+            {
+                entry.Collection(relation).Load();
+            }
+            else
+            {
+                entry.Reference(relation).Load();
+            }
         }
     }
 }

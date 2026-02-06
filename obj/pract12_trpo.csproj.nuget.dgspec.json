@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\st310-10\\Desktop\\кдэ\\trpo12_demo\\pract12_trpo.csproj": {}
+    "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\st310-10\\Desktop\\кдэ\\trpo12_demo\\pract12_trpo.csproj": {
+    "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\st310-10\\Desktop\\кдэ\\trpo12_demo\\pract12_trpo.csproj",
+        "projectUniqueName": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj",
         "projectName": "pract12_trpo",
-        "projectPath": "C:\\Users\\st310-10\\Desktop\\кдэ\\trpo12_demo\\pract12_trpo.csproj",
-        "packagesPath": "C:\\Users\\st310-10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\st310-10\\Desktop\\кдэ\\trpo12_demo\\obj\\",
+        "projectPath": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj",
+        "packagesPath": "C:\\Users\\Damir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\st310-10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Damir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,8 +25,7 @@
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "\\\\192.168.200.250\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

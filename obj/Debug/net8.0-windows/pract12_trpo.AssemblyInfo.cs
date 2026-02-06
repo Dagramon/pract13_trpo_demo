@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pract12_trpo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7014641659d171870599b24a271c12240f9c36bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("pract12_trpo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pract12_trpo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
