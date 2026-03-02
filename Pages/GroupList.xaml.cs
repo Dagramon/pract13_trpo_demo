@@ -27,6 +27,7 @@ namespace pract12_trpo.Pages
         public GroupList()
         {
             InitializeComponent();
+            DataContext = this;
         }
         private void back(object sender, RoutedEventArgs e)
         {

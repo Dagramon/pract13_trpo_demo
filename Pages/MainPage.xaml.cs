@@ -63,5 +63,26 @@ namespace pract12_trpo.Pages
                 service.Remove(student);
             }
         }
+
+        private void go_group(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new GroupList());
+        }
+
+        private void go_courses(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new CourseList());
+        }
+
+        private void go_sign(object sender, RoutedEventArgs e)
+        {
+            if (student != null)
+                NavigationService.Navigate(new SignCourse(student));
+        }
+
+        private void UpdateCourseList(object sender, MouseButtonEventArgs e)
+        {
+            DataContext = this;
+        }
     }
 }

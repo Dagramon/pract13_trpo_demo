@@ -1,7 +1,9 @@
 ﻿using pract12_trpo.Classes;
+using pract12_trpo.Classes.Models;
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -58,6 +60,12 @@ namespace pract12_trpo.Classes
         {
             get => _group;
             set => SetProperty(ref _group, value);
+        }
+        private ObservableCollection<CourseStudent> _courseStudents;
+        public ObservableCollection<CourseStudent> CourseStudents
+        {
+            get => _courseStudents;
+            set => SetProperty(ref _courseStudents, value);
         }
     }
 }

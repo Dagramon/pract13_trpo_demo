@@ -43,6 +43,7 @@ namespace pract12_trpo.DataBase.Service
             var students = _db.Students
                 .Include(s => s.Passport)
                 .Include(s => s.Group)
+                .Include(s => s.CourseStudents)
                 .ToList();
 
             Students.Clear();

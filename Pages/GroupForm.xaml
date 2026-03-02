@@ -29,11 +29,11 @@
                 <DataTemplate>
                     <TextBlock>
                         <Run Text="Фамилия "/>
-                        <Run Text="{Binding LastName} "/>
+                        <Run Text="{Binding LastName}"/>
                         <Run Text="Имя "/>
                         <Run Text="{Binding FirstName}"/>
                         <Run Text="Отчетсво "/>
-                        <Run Text="{Binding MiddleName} "/>
+                        <Run Text="{Binding MiddleName}"/>
                     </TextBlock>
                 </DataTemplate>
             </ListView.ItemTemplate>

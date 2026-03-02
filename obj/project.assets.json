@@ -4722,23 +4722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Damir\\.nuget\\packages\\": {},
-    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\st310-10\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj",
+      "projectUniqueName": "C:\\Users\\st310-10\\Documents\\Карамов\\pract13_trpo_demo\\pract12_trpo.csproj",
       "projectName": "pract12_trpo",
-      "projectPath": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\pract12_trpo.csproj",
-      "packagesPath": "C:\\Users\\Damir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Damir\\Source\\Repos\\pract13_trpo_demo\\obj\\",
+      "projectPath": "C:\\Users\\st310-10\\Documents\\Карамов\\pract13_trpo_demo\\pract12_trpo.csproj",
+      "packagesPath": "C:\\Users\\st310-10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\st310-10\\Documents\\Карамов\\pract13_trpo_demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Damir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\st310-10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4746,7 +4746,8 @@
         "net8.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "\\\\192.168.200.250\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4805,7 +4806,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

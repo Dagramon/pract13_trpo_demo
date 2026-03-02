@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Damir\Source\Repos\pract13_trpo_demo\obj\Debug\net8.0-windows\
+C:\Users\st310-10\Documents\Карамов\pract13_trpo_demo\obj\Debug\net8.0-windows\
 pract12_trpo
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Damir\Source\Repos\pract13_trpo_demo\App.xaml
-5-650864776
+C:\Users\st310-10\Documents\Карамов\pract13_trpo_demo\App.xaml
+8-261118927
 
-25-2020616370
-228805088200
-MainWindow.xaml;Pages\GroupForm.xaml;Pages\GroupList.xaml;Pages\MainPage.xaml;Pages\StudentFormPage.xaml;
+34590059995
+228-2137974634
+MainWindow.xaml;Pages\CourseForm.xaml;Pages\CourseList.xaml;Pages\GroupForm.xaml;Pages\GroupList.xaml;Pages\MainPage.xaml;Pages\SignCourse.xaml;Pages\StudentFormPage.xaml;
 
 False
 

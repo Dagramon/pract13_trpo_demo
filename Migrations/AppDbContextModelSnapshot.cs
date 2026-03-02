@@ -39,6 +39,44 @@ namespace pract12_trpo.Migrations
                     b.ToTable("Groups");
                 });
 
+            modelBuilder.Entity("pract12_trpo.Classes.Models.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Course");
+                });
+
+            modelBuilder.Entity("pract12_trpo.Classes.Models.CourseStudent", b =>
+                {
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("EndDate")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("StartDate")
+                        .HasColumnType("date");
+
+                    b.HasKey("StudentId", "CourseId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("CoursesStudents");
+                });
+
             modelBuilder.Entity("pract12_trpo.Classes.Passport", b =>
                 {
                     b.Property<int>("Id")
@@ -97,6 +135,25 @@ namespace pract12_trpo.Migrations
                     b.ToTable("Students");
                 });
 
+            modelBuilder.Entity("pract12_trpo.Classes.Models.CourseStudent", b =>
+                {
+                    b.HasOne("pract12_trpo.Classes.Models.Course", "Course")
+                        .WithMany("CourseStudents")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("pract12_trpo.Classes.Student", "Student")
+                        .WithMany("CourseStudents")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("pract12_trpo.Classes.Passport", b =>
                 {
                     b.HasOne("pract12_trpo.Classes.Student", "Student")
@@ -124,8 +181,15 @@ namespace pract12_trpo.Migrations
                     b.Navigation("Students");
                 });
 
+            modelBuilder.Entity("pract12_trpo.Classes.Models.Course", b =>
+                {
+                    b.Navigation("CourseStudents");
+                });
+
             modelBuilder.Entity("pract12_trpo.Classes.Student", b =>
                 {
+                    b.Navigation("CourseStudents");
+
                     b.Navigation("Passport")
                         .IsRequired();
                 });

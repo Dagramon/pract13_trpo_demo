@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 using pract12_trpo.Classes;
+using pract12_trpo.Classes.Models;
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace pract12_trpo.DataBase
         public DbSet<Student> Students { get; set; }
         public DbSet<Passport> Passports { get; set; }
         public DbSet<Group> Groups { get; set; }
+        public DbSet<Course> Course { get; set; }
+        public DbSet<CourseStudent> CoursesStudents { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=sql.ects;Database=KaramovSchoolDB;User Id=student_10;Password=student_10;TrustServerCertificate=True;");
@@ -29,6 +32,16 @@ namespace pract12_trpo.DataBase
                 .HasMany(g => g.Students)
                 .WithOne(s => s.Group)
                 .HasForeignKey(s => s.GroupId);
+            modelBuilder.Entity<CourseStudent>()
+                .HasKey(cs => new { cs.StudentId, cs.CourseId });
+            modelBuilder.Entity<CourseStudent>()
+                .HasOne(cs => cs.Student)
+                .WithMany(s => s.CourseStudents)
+                .HasForeignKey(cs => cs.StudentId);
+            modelBuilder.Entity<CourseStudent>()
+                .HasOne(cs => cs.Course)
+                .WithMany(c => c.CourseStudents)
+                .HasForeignKey(cs => cs.CourseId);
         }
     }
 }

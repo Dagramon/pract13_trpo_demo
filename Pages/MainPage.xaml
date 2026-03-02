@@ -18,14 +18,22 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal">
             <Button Click="go_form">Добавить</Button>
             <Button Click="remove">Удалить</Button>
+            <Button Click="go_group">Группы</Button>
+            <Button Click="go_courses">Курсы</Button>
+            <Button Click="go_sign">Запиать на курс</Button>
         </StackPanel>
         <ListView Grid.Row="1"
                   ItemsSource="{Binding service.Students}"
                   MouseDoubleClick="Edit"
-                  SelectedItem="{Binding student}">
+                  SelectedItem="{Binding student}"
+                  MouseDown="UpdateCourseList">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -46,6 +54,24 @@
                                 <Run Text="{Binding Group.Title}"/>
                             </TextBlock>
                         </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="1"
+                  Grid.Column="1"
+                  ItemsSource="{Binding student.CourseStudents}"> 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <TextBlock>Курс: </TextBlock>
+                            <TextBlock Text="{Binding Course.Title}"></TextBlock>
+                            <TextBlock>Дата начала: </TextBlock>
+                            <TextBlock Text="{Binding StartDate}"></TextBlock>
+                            <TextBlock>Дата окончания: </TextBlock>
+                            <TextBlock Text="{Binding EndDate}"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
